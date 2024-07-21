@@ -128,7 +128,7 @@
   background-image: url('../../assets/images/youtubeafter.webp');
   background-repeat: no-repeat;
   top: -265px;
-  left: -260px;
+  left: -200px;
   z-index: 9;
 }
 
@@ -137,6 +137,7 @@
   width: 1240px;
   height: 660px;
   border-radius: 10px;
+  margin: 0 auto;
   z-index: 99;
 }
 
