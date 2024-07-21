@@ -150,26 +150,30 @@
 
 .faculties-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 40px;
 }
 
 .faculties-title {
+  font-family: Belleza;
   text-align: center;
   font-weight: 400;
   font-size: 48px;
   line-height: 55.3px;
   margin-top: 80px;
+  margin-bottom: -120px;
 }
 
 .faculties-item {
   position: relative;
   margin-left: 35px;
+  transform: scale(1);
 }
 
-.faculties-item:nth-child(1) {
-  margin-left: 0px;
+.faculties-item:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+
 }
 
 .faculties-img {
@@ -203,7 +207,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 19.41px;
-  padding: 10px 40px 10px 20px;
+  padding: 10px 40px 0px 20px;
 }
 
 .faculties-link {
@@ -222,24 +226,23 @@
   line-height: 14.63px;
 }
 
+.faculties-btn {
+  width: 250px;
+  height: 100px;
+  margin-top: -15px;
+  margin-left: -8px;
+}
+
 .faculties-student-box {
-  text-align: center;
   margin-top: 20px;
 }
 
-.faculties-student {
-  background-color: #F8AD52;
-  border-radius: 8px;
-  border-bottom: 2px solid;
-  padding: 18px 70px;
-}
-
-.faculties-student-link {
-  color: #fff;
-  margin-top: 150px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21.94px;
+.faculties-student-btn {
+  display: block;
+  margin: 0 auto;
+  width: 340px;
+  height: 100px;
+  margin-top: 140px;
 }
 
 /* faculties */
@@ -298,27 +301,17 @@
 }
 
 .about-text {
-  max-width: 700px;
+  max-width: 680px;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24.26px;
+  line-height: 30px;
   padding-left: 30px;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
-.about-student {
-  background-color: #F8AD52;
-  border-radius: 8px;
-  border-bottom: 2px solid;
-  padding: 18px 70px;
-  margin-left: 30px;
-}
-
-.about-student-link {
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21.94px;
+.about-btn {
+  width: 330px;
+  height: 100px;
 }
 
 /* About */
@@ -376,19 +369,12 @@
   text-align: center;
 }
 
-.grants-student {
-  background-color: #F8AD52;
-  border-radius: 8px;
-  border-bottom: 2px solid;
-  padding: 18px 70px;
-}
-
-.grants-student-link {
-  color: #fff;
-  margin-top: 60px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21.94px;
+.grants-btn {
+  display: inline-block;
+  width: 330px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 35px;
 }
 
 /* grants */
@@ -423,9 +409,6 @@
   margin-top: 40px;
 }
 
-.teachers-item:nth-child(1) {
-  padding-left: 0px;
-}
 
 .teachers-name {
   font-weight: 400;
@@ -529,7 +512,7 @@
 .university-img {
   position: absolute;
   top: 150px;
-  right: 15px;
+  right: 22px;
   z-index: 9;
 }
 

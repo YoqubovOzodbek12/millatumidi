@@ -1,25 +1,36 @@
 
 import { useState } from "react";
-// import { SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper/modules';
+import Marquee from "react-fast-marquee";
 
 import { FaCheck } from "react-icons/fa";
-
-
-// import Swiper from 'swiper';
 
 import Logo from '../../assets/Logo/logo.svg';
 import LangIcon from '../../assets/svg/langIcon.svg';
 import HeroImg from '../../assets/images/hero.webp';
-import Faculties from '../../assets/images/faculties.webp';
 import AboutOne from '../../assets/images/aboutone.webp';
 import AboutTwo from '../../assets/images/abouttwo.webp';
 import AboutTree from '../../assets/images/abouttree.webp';
 import Grants from '../../assets/images/grants.webp';
-import TeacherOne from '../../assets/images/teacher/one.webp';
-import UniversityOne from '../../assets/images/universitynumber/universityone.webp';
 import BtnHero from '../../assets/images/btn.webp';
 import BtnHeroTwo from '../../assets/images/btnariza.webp';
+import BtnBatafsil from '../../assets/images/btnbatafsil.webp';
+
+import Fakultet1 from '../../assets/images/fakultet/1.webp'
+import Fakultet2 from '../../assets/images/fakultet/2.webp'
+import Fakultet3 from '../../assets/images/fakultet/3.webp'
+import Fakultet4 from '../../assets/images/fakultet/4.webp'
+
+import TeacherOne from '../../assets/images/teacher/one.webp'
+import TeacherTwo from '../../assets/images/teacher/two.webp'
+import TeacherTree from '../../assets/images/teacher/tree.webp'
+import TeacherFour from '../../assets/images/teacher/four.webp'
+
+import UniversityOne from '../../assets/images/universitynumber/1.webp';
+import UniversityTwo from '../../assets/images/universitynumber/02.webp';
+import UniversityTree from '../../assets/images/universitynumber/03.webp';
+import UniversityFour from '../../assets/images/universitynumber/04.webp';
+import UniversityFive from '../../assets/images/universitynumber/05.webp';
+import UniversitySix from '../../assets/images/universitynumber/06.webp';
 
 
 // import 'swiper/css';
@@ -149,43 +160,69 @@ const Home = () => {
               <h3 className='faculties-title'>Bizning fakultetlarimiz</h3>
             </div>
 
-            <div className='faculties-wrapper'>
+            <Marquee style={{ height: '650px' }}>
+              <div className='faculties-wrapper'>
 
-              <div className='faculties-item'>
-                <img className='faculties-img' src={Faculties} alt="Faculties-img" referrerpolicy="no-referrer" />
-                <div className='faculties-box'>
-                  <h3 className='faculties-text'>Ingliz tilini o’qitish</h3>
-                  <p className='faculties-desc'>
-                    2023-yilda talabalarga tillar va turdosh fanlarni o‘rgatish sohasida zarur ko‘nikma va bilimlarni berish uchun ...
-                  </p>
-                  <a className='faculties-link' href="#"><button className='faculties-link-btn'>Batafsil ma’lumot</button></a>
+                <div className='faculties-item'>
+                  <img className='faculties-img' src={Fakultet1} alt="Faculties-img" referrerpolicy="no-referrer" />
+                  <div className='faculties-box'>
+                    <h3 className='faculties-text'>Axborot texnologiyalari (Dasturiy ta’minot)</h3>
+                    <p className='faculties-desc'>
+                      Dasturiy ta'minot muhandislari keng ko'lamli, murakkab dasturiy ta'minot infratuzilmalarini ishlab chiqadilar ...
+                    </p>
+                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                  </div>
                 </div>
-              </div>
 
-              <div className='faculties-item'>
-                <img className='faculties-img' src={Faculties} alt="Faculties-img" referrerpolicy="no-referrer" />
-                <div className='faculties-box'>
-                  <h3 className='faculties-text'>Ingliz tilini o’qitish</h3>
-                  <p className='faculties-desc'>
-                    2023-yilda talabalarga tillar va turdosh fanlarni o‘rgatish sohasida zarur ko‘nikma va bilimlarni berish uchun ...
-                  </p>
-                  <a className='faculties-link' href="#"><button className='faculties-link-btn'>Batafsil ma’lumot</button></a>
+                <div className='faculties-item'>
+                  <img className='faculties-img' src={Fakultet2} alt="Faculties-img" referrerpolicy="no-referrer" />
+                  <div className='faculties-box'>
+                    <h3 className='faculties-text'>Biznes menejment (Pearson BTEC)</h3>
+                    <p className='faculties-desc'>
+                      40 yildan ortiq muvaffaqiyatli o'qitish tajribasiga ega bo'lgan bizning BTEC International Business Level 3 ...
+                    </p>
+                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                  </div>
                 </div>
-              </div>
 
-              <div className='faculties-item'>
-                <img className='faculties-img' src={Faculties} alt="Faculties-img" referrerpolicy="no-referrer" />
-                <div className='faculties-box'>
-                  <h3 className='faculties-text'>Biznes menejment (Pearson BTEC)</h3>
-                  <p className='faculties-desc'>
-                    2023-yilda talabalarga tillar va turdosh fanlarni o‘rgatish sohasida zarur ko‘nikma va bilimlarni berish uchun ...
-                  </p>
-                  <a className='faculties-link' href="#"><button className='faculties-link-btn'>Batafsil ma’lumot</button></a>
+                <div className='faculties-item'>
+                  <img className='faculties-img' src={Fakultet3} alt="Faculties-img" referrerpolicy="no-referrer" />
+                  <div className='faculties-box'>
+                    <h3 className='faculties-text'>Ingliz tilini o’qitish</h3>
+                    <p className='faculties-desc'>
+                      2023-yilda talabalarga tillar va turdosh fanlarni o‘rgatish sohasida zarur ko‘nikma va bilimlarni berish uchun ...
+                    </p>
+                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                  </div>
                 </div>
+
+
+                <div className='faculties-item'>
+                  <img className='faculties-img' src={Fakultet4} alt="Faculties-img" referrerpolicy="no-referrer" />
+                  <div className='faculties-box'>
+                    <h3 className='faculties-text'>Buxgalteriya hisobi va moliya</h3>
+                    <p className='faculties-desc'>
+                      Fakultetimiz talabalarga ACCA imtihonlarini topshirish va to‘qqizta asosiy sertifikat olish imkonini beruvchi
+                    </p>
+                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                  </div>
+                </div>
+
+                <div className='faculties-item'>
+                  <img className='faculties-img' src={Fakultet4} alt="Faculties-img" referrerpolicy="no-referrer" />
+                  <div className='faculties-box'>
+                    <h3 className='faculties-text'>Biznes boshqaruvi (Milliy)</h3>
+                    <p className='faculties-desc'>
+                      “Xalqaro biznes” fakulteti negizida faoliyat yurituvchi “Biznes menejmenti” kursi talabalarga mulk shaklidan qat...
+                    </p>
+                    <img className="faculties-btn" src={BtnBatafsil} alt="" />
+                  </div>
+                </div>
+
               </div>
-            </div>
+            </Marquee>
             <div className='faculties-student-box'>
-              <a className='faculties-student' href="#"><button className='faculties-student-link'>Talaba bo’lish</button></a>
+              <img className="faculties-student-btn" src={BtnHero} alt="" />
             </div>
           </div>
         </section>
@@ -204,8 +241,7 @@ const Home = () => {
               <p className='about-text'>
                 MU universiteti 2021-yilda ochilgan va jahondagi sifatli ta’lim standartlariga javob beradigan zamonaviy ta’lim muassasasi hisoblanadi. Millat Umidi universiteti o‘z talabalariga ixtisoslashtirilgan bilim olish va keyingi ta’lim olish va hayotda o‘z yo‘lini tanlash uchun keng imkoniyatlarni taqdim etadi.
               </p>
-
-              <a className='about-student' href="#"><button className='about-student-link'>Talaba bo’lish</button></a>
+              <img className="about-btn" src={BtnHero} alt="" />
             </div>
           </div>
         </section>
@@ -281,7 +317,7 @@ const Home = () => {
               </div>
             </div>
             <div className="grants-btns">
-              <a className='grants-student' href="#"><button className='grants-student-link'>Talaba bo’lish</button></a>
+              <img className="grants-btn" src={BtnHero} alt="" />
             </div>
           </div>
         </section>
@@ -293,33 +329,44 @@ const Home = () => {
               <h2 className="teachers-title">Bizning malakali o’qituvchilarimiz</h2>
             </div>
 
-            <div className="teachers-wrapper">
-              <div className="teachers-item">
-                <img src={TeacherOne} alt="Teacher-img" width={346} height={402} />
-                <p className="teachers-name">Yoqub</p>
-                <p className="teachers-lastname">Usmonov</p>
-                <span className="teacher-job">Kasbi:</span>
-                <p className="teacher-skills">O’qituvchi, Marketolog</p>
+            <Marquee>
+
+              <div className="teachers-wrapper">
+                <div className="teachers-item">
+                  <img src={TeacherOne} alt="Teacher-img" width={346} height={402} />
+                  <p className="teachers-name">Yoqub</p>
+                  <p className="teachers-lastname">Usmonov</p>
+                  <span className="teacher-job">Kasbi:</span>
+                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                </div>
+
+                <div className="teachers-item">
+                  <img src={TeacherTwo} alt="Teacher-img" width={346} height={402} />
+                  <p className="teachers-name">Ramziddin</p>
+                  <p className="teachers-lastname">Nurmahammatov</p>
+                  <span className="teacher-job">Kasbi:</span>
+                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                </div>
+
+                <div className="teachers-item">
+                  <img src={TeacherTree} alt="Teacher-img" width={346} height={402} />
+                  <p className="teachers-name">Nodir</p>
+                  <p className="teachers-lastname">Ismailov</p>
+                  <span className="teacher-job">Kasbi:</span>
+                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                </div>
+
+                <div className="teachers-item">
+                  <img src={TeacherFour} alt="Teacher-img" width={346} height={402} />
+                  <p className="teachers-name">Behruz </p>
+                  <p className="teachers-lastname">Ismailov</p>
+                  <span className="teacher-job">Kasbi:</span>
+                  <p className="teacher-skills">O’qituvchi, Marketolog</p>
+                </div>
+
+
               </div>
-
-              <div className="teachers-item">
-                <img src={TeacherOne} alt="Teacher-img" width={346} height={402} />
-                <p className="teachers-name">Yoqub</p>
-                <p className="teachers-lastname">Usmonov</p>
-                <span className="teacher-job">Kasbi:</span>
-                <p className="teacher-skills">O’qituvchi, Marketolog</p>
-              </div>
-
-              <div className="teachers-item">
-                <img src={TeacherOne} alt="Teacher-img" width={346} height={402} />
-                <p className="teachers-name">Yoqub</p>
-                <p className="teachers-lastname">Usmonov</p>
-                <span className="teacher-job">Kasbi:</span>
-                <p className="teacher-skills">O’qituvchi, Marketolog</p>
-              </div>
-
-
-            </div>
+            </Marquee>
 
 
           </div>
@@ -351,7 +398,7 @@ const Home = () => {
                     CV yozish haqidagi dars
                     JOB interview ga ega bo’lasiz
                   </p>
-                  <img className="university-img" src={UniversityOne} alt="" />
+                  <img className="university-img" src={UniversityTwo} alt="" />
                 </div>
               </div>
 
@@ -364,7 +411,7 @@ const Home = () => {
                     CV yozish haqidagi dars
                     JOB interview ga ega bo’lasiz
                   </p>
-                  <img className="university-img" src={UniversityOne} alt="" />
+                  <img className="university-img" src={UniversityTree} alt="" />
                 </div>
               </div>
 
@@ -376,7 +423,7 @@ const Home = () => {
                     CV yozish haqidagi dars
                     JOB interview ga ega bo’lasiz
                   </p>
-                  <img className="university-img" src={UniversityOne} alt="" />
+                  <img className="university-img" src={UniversityFour} alt="" />
                 </div>
               </div>
 
@@ -388,7 +435,7 @@ const Home = () => {
                     CV yozish haqidagi dars
                     JOB interview ga ega bo’lasiz
                   </p>
-                  <img className="university-img" src={UniversityOne} alt="" />
+                  <img className="university-img" src={UniversityFive} alt="" />
                 </div>
               </div>
 
@@ -400,7 +447,7 @@ const Home = () => {
                     CV yozish haqidagi dars
                     JOB interview ga ega bo’lasiz
                   </p>
-                  <img className="university-img" src={UniversityOne} alt="" />
+                  <img className="university-img" src={UniversitySix} alt="" />
                 </div>
               </div>
             </div>
