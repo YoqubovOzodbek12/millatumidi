@@ -1,7 +1,7 @@
 /* Container */
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -22,6 +22,7 @@
 }
 
 .header-middle-link {
+  font-family: Gilroy-Medium;
   font-weight: 500;
   padding-left: 30px;
   font-size: 20px;
@@ -71,23 +72,24 @@
   margin-bottom: 120px;
 }
 
+
 .hero-left-title {
   font-family: Belleza;
   font-weight: 400;
   font-size: 46px;
   line-height: 52.99px;
-  padding: 70px 70px 20px 0px;
+  padding: 70px 106px 20px 0px;
 }
 
 .hero-left-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  padding: 0px 160px 50px 0px;
+  padding: 0px 300px 50px 0px;
 }
 
 .hero-right-img {
-  width: 1600px;
+  width: 1760px;
   height: 464px;
 }
 
@@ -163,13 +165,13 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 55.3px;
-  margin-top: 80px;
-  margin-bottom: -120px;
+  margin-top: 70px;
+  margin-bottom: -160px;
 }
 
 .faculties-item {
   position: relative;
-  margin-left: 35px;
+  margin-left: 25px;
   transform: scale(1);
 }
 
@@ -197,6 +199,7 @@
 }
 
 .faculties-text {
+  font-family: Gilroy-Bold;
   height: 60px;
   font-weight: 400;
   font-size: 20px;
@@ -207,6 +210,7 @@
 }
 
 .faculties-desc {
+  font-family: Gilroy-Medium;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.41px;
@@ -245,7 +249,7 @@
   margin: 0 auto;
   width: 340px;
   height: 100px;
-  margin-top: 140px;
+  margin-top: -30px;
 }
 
 /* faculties */
@@ -296,6 +300,7 @@
 }
 
 .about-title {
+  font-family: Gilroy-Bold;
   font-weight: 400;
   font-size: 40px;
   line-height: 49.52px;
@@ -304,12 +309,13 @@
 }
 
 .about-text {
+  font-family: Gilroy-Medium;
   max-width: 680px;
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
   padding-left: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 45px;
 }
 
 .about-btn {
@@ -332,6 +338,7 @@
 }
 
 .grants-title {
+  font-family: Belleza;
   text-align: center;
   margin-top: 300px;
   font-weight: 400;
@@ -356,6 +363,10 @@
 }
 
 .grants-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   padding-left: 20px;
   padding-bottom: 10px;
 }
@@ -377,7 +388,8 @@
   width: 330px;
   height: 100px;
   margin: 0 auto;
-  margin-top: 35px;
+  margin-top: 24px;
+  margin-bottom: -60px;
 }
 
 /* grants */
@@ -395,6 +407,7 @@
 }
 
 .teachers-title {
+  font-family: Belleza;
   text-align: center;
   font-weight: 400;
   font-size: 48px;
@@ -414,12 +427,14 @@
 
 
 .teachers-name {
+  font-family: Poppins;
   font-weight: 400;
   font-size: 31px;
   line-height: 41.98px;
 }
 
 .teachers-lastname {
+  font-family: Poppins;
   font-weight: 400;
   font-size: 31px;
   line-height: 41.98px;
@@ -427,6 +442,7 @@
 }
 
 .teacher-job {
+  font-family: Poppins;
   color: #0D7ADC;
   font-weight: 500;
   font-size: 18px;
@@ -434,6 +450,7 @@
 }
 
 .teacher-skills {
+  font-family: Poppins;
   font-weight: 500;
   font-size: 18px;
   line-height: 23.61px;
@@ -494,6 +511,7 @@
 }
 
 .university-text {
+  font-family: Montserrat;
   font-weight: 700;
   font-size: 16px;
   line-height: 19.5px;
@@ -503,6 +521,7 @@
 
 .university-desc {
   position: relative;
+  font-family: Montserrat;
   max-width: 280px;
   text-align: center;
   font-weight: 400;
@@ -528,7 +547,8 @@
 /* questions */
 
 .questions-title {
-  margin-top: 80px;
+  font-family: Belleza;
+  margin-top: 50px;
   text-align: center;
   font-weight: 400;
   font-size: 40px;
@@ -542,6 +562,7 @@
 }
 
 .questions-text {
+  font-family: Gilroy-Medium;
   font-weight: 400;
   font-size: 18px;
   line-height: 29.11px;
@@ -557,6 +578,7 @@
 /* footer */
 
 .footer-title {
+  font-family: Gilroy;
   text-align: center;
   font-weight: 700;
   font-size: 40px;
@@ -573,6 +595,7 @@
 
 .footer-text {
   position: relative;
+  font-family: Gilroy;
   font-weight: 400;
   font-size: 18px;
   line-height: 18.01px;
@@ -595,7 +618,8 @@
 
 .footer-desc {
   position: relative;
-  font-weight: 500;
+  font-family: Gilroy-Bold;
+  font-weight: 400;
   font-size: 36px;
   line-height: 44.58px;
 }

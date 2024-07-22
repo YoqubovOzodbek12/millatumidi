@@ -460,7 +460,7 @@ const Home = () => {
           <div className="container">
             <h2 className="questions-title">Ko’p beriladigan savollar</h2>
             <div className="h-screen py-20 flex justify-center">
-              <div className="w-[833px]rounded-lg overflow-hidden">
+              <div className="h-4/5 rounded-lg overflow-hidden">
                 {frequentlyAskQuestions.map((item, i) => (
                   <div key={i} className="border-orange-400 mb-1">
                     <div
