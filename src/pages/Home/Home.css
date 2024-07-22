@@ -29,6 +29,10 @@
   line-height: 24.26px;
 }
 
+.header-middle-link:hover {
+  color: #F5B230;
+}
+
 /* .header-middle-link:nth-child(1) {
   padding-left: 0px;
 } */
