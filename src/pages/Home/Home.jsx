@@ -1,5 +1,9 @@
 
 import { useState } from "react";
+import React, { useCallback, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
+import { Pagination } from "swiper/modules"
 import Marquee from "react-fast-marquee";
 
 import { FaCheck } from "react-icons/fa";
@@ -33,8 +37,10 @@ import UniversityFive from '../../assets/images/universitynumber/05.webp';
 import UniversitySix from '../../assets/images/universitynumber/06.webp';
 
 
-// import 'swiper/css';
-// import 'swiper/css/navigation';
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 import './Home.css'
 
@@ -76,8 +82,20 @@ const frequentlyAskQuestions = [
 
 const Home = () => {
 
-
+  const sliderRef = useRef(null);
   const [activeId, setActiveId] = useState(null);
+
+
+  const handlePrev = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slidePrev();
+  }, []);
+
+  const handleNext = useCallback(() => {
+    if (!sliderRef.current) return;
+    sliderRef.current.swiper.slideNext();
+  }, []);
+
 
   const togglerFunction = (index) => {
     if (activeId === index) {
@@ -148,7 +166,7 @@ const Home = () => {
 
         <section className='youtube'>
           <div className='youtube-wrapper container'>
-            <iframe className='youtube-iframe' src="https://www.youtube.com/embed/AnVO_pFyz7o?si=8VOZgaj_GabUnM7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            <iframe className='youtube-video' src="https://www.youtube.com/embed/AnVO_pFyz7o?si=8VOZgaj_GabUnM7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
           </div>
         </section>
@@ -248,21 +266,45 @@ const Home = () => {
         </section>
 
 
+        <section style={{ paddingTop: "150px" }}>
+          <Swiper
 
-        <section>
-          {/* <div className='contaner'>
-            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-              <SwiperSlide>Slide 1</SwiperSlide>
-              <SwiperSlide>Slide 2</SwiperSlide>
-              <SwiperSlide>Slide 3</SwiperSlide>
-              <SwiperSlide>Slide 4</SwiperSlide>
-              <SwiperSlide>Slide 5</SwiperSlide>
-              <SwiperSlide>Slide 6</SwiperSlide>
-              <SwiperSlide>Slide 7</SwiperSlide>
-              <SwiperSlide>Slide 8</SwiperSlide>
-              <SwiperSlide>Slide 9</SwiperSlide>
-            </Swiper>
-          </div> */}
+            ref={sliderRef}
+            initialSlide={2}
+            Swiper
+            slidesPerView={2}
+            spaceBetween={30}
+            centeredSlides={true}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+            style={{ paddingBottom: "50px" }}
+
+          >
+            {Array.from({ length: 10 }).map((_, index) => (
+              <SwiperSlide style={{ padding: "20px" }} key={index}>
+                <iframe
+                  style={{ width: "100%", height: "450px" }}
+                  className="youtube-iframe"
+                  src="https://www.youtube.com/embed/AnVO_pFyz7o?si=8VOZgaj_GabUnM7k"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <div className="video-slider-btn-box">
+            <button onClick={handlePrev} className="video-slider-btn">
+              <MdNavigateBefore size={30} />
+            </button>
+            <button onClick={handleNext} className="video-slider-btn">
+              <MdNavigateNext size={30} />
+            </button>
+          </div>
         </section>
 
 
@@ -522,3 +564,4 @@ const Home = () => {
   )
 }
 export default Home
+
