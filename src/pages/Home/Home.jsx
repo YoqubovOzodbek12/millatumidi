@@ -286,7 +286,7 @@ const Home = () => {
             {Array.from({ length: 10 }).map((_, index) => (
               <SwiperSlide style={{ padding: "20px" }} key={index}>
                 <iframe
-                  style={{ width: "100%", height: "450px" }}
+                  style={{ width: "100%", height: "60vh" }}
                   className="youtube-iframe"
                   src="https://www.youtube.com/embed/AnVO_pFyz7o?si=8VOZgaj_GabUnM7k"
                   title="YouTube video player"
