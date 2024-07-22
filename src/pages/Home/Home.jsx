@@ -160,7 +160,7 @@ const Home = () => {
               <h3 className='faculties-title'>Bizning fakultetlarimiz</h3>
             </div>
 
-            <Marquee style={{ height: '650px' }}>
+            <Marquee pauseOnHover style={{ height: '650px' }}>
               <div className='faculties-wrapper'>
 
                 <div className='faculties-item'>
