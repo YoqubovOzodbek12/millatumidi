@@ -113,6 +113,7 @@ const Home = () => {
             <img className='header-right-icon' src={LangIcon} alt="" referrerpolicy="no-referrer" />
 
             <select className='header-right-sel' name="" id="">
+
               <option value="">UZ</option>
               <option value="">RU</option>
               <option value="">EN</option>
@@ -460,7 +461,7 @@ const Home = () => {
           <div className="container">
             <h2 className="questions-title">Ko’p beriladigan savollar</h2>
             <div className="h-screen py-20 flex justify-center">
-              <div className="h-4/5 rounded-lg overflow-hidden">
+              <div className="rounded-lg overflow-hidden">
                 {frequentlyAskQuestions.map((item, i) => (
                   <div key={i} className="border-orange-400 mb-1">
                     <div
